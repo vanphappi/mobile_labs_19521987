@@ -4,15 +4,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import java.sql.ClientInfoStatus;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private EditText inputFullName;
     private EditText inputGrossSalary;
-    private TextView outputInformation;
+    private ListView outputInformation;
     private Button buttonCalculate;
+
+    private ArrayList<PersonalSalary> arr;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
 
         buttonCalculate= findViewById(R.id.buttonCalculate);
         outputInformation = findViewById(R.id.outputInformation);
+
+        arr = new ArrayList<PersonalSalary>();
+
+        ArrayAdapter<PersonalSalary> adapter = new ArrayAdapter<PersonalSalary>(
+                MainActivity.this, android.R.layout.simple_list_item_1, arr
+        );
+
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,11 +50,15 @@ public class MainActivity extends AppCompatActivity {
                     grossSalary = 0;
                 }
                 PersonalSalary preson = new PersonalSalary(fullName,grossSalary);
-                if(preson.getInformation() != "")
-                    outputInformation.setText(outputInformation.getText()+"\n"+preson.getInformation());
+                if(preson.toString() != "") {
+                    arr.add(preson);
+                    adapter.notifyDataSetChanged();
+                }
                 inputFullName.setText(null);
                 inputGrossSalary.setText(null);
+                
             }
         });
+        outputInformation.setAdapter(adapter);
     }
 }

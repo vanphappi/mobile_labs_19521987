@@ -21,7 +21,7 @@ public class PersonalSalary {
         return netSalary;
     }
 
-    public String getInformation(){
+    public String toString(){
         if(fullName.length() == 0 && grossSalary == 0)
             return "";
         return fullName + " - Net Salary: " + new BigDecimal(netSalary()).toPlainString();
