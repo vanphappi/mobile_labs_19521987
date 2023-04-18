@@ -36,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
                     grossSalary = 0;
                 }
                 PersonalSalary preson = new PersonalSalary(fullName,grossSalary);
-                outputInformation.setText(outputInformation.getText()+"\n"+preson.getInformation());
+                if(preson.getInformation() != "")
+                    outputInformation.setText(outputInformation.getText()+"\n"+preson.getInformation());
                 inputFullName.setText(null);
                 inputGrossSalary.setText(null);
             }

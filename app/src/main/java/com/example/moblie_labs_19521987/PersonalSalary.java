@@ -22,7 +22,7 @@ public class PersonalSalary {
     }
 
     public String getInformation(){
-        if(this.fullName == "" && this.grossSalary == 0 )
+        if(fullName.length() == 0 && grossSalary == 0)
             return "";
         return fullName + " - Net Salary: " + new BigDecimal(netSalary()).toPlainString();
     }
