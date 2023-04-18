@@ -16,30 +16,32 @@
                 android:text="Full Name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="40dp"/>
+                android:textSize="25dp"/>
             <EditText
                 android:id="@+id/inputFullName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Please enter full name"
-                android:textSize="35dp">
+                android:hint="Please enter full name"
+                android:text=""
+                android:textSize="25dp">
 
             </EditText>
             <TextView
                 android:text="Gross Salary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="40dp"/>
+                android:textSize="25dp"/>
             <EditText
                 android:id="@+id/inputGrossSalary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Please enter gross salary"
-                android:textSize="35dp">
+                android:hint="Please enter gross salary"
+                android:inputType = "number"
+                android:textSize="25dp">
 
             </EditText>
             <Button
-                android:id="@+id/ButtonCalculate"
+                android:id="@+id/buttonCalculate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -50,7 +52,8 @@
                 android:id="@+id/outputInformation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                >
+                android:textSize="20dp"
+                android:text="">
             </TextView>
         </LinearLayout>
     </ScrollView>
