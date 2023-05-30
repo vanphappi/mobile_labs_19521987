@@ -21,10 +21,17 @@
                 android:text="Welcome to Home Page" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/fname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="FullName" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Log Out" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
