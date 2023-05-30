@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "925908817676",
+    "project_id": "mobile-labs-19521987",
+    "storage_bucket": "mobile-labs-19521987.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925908817676:android:b8ff1bb609304207525b29",
+        "android_client_info": {
+          "package_name": "com.example.moblie_labs_19521987"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925908817676-1m3dllllbvghj9fhh7dec0bstqjfr0dj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwI3tKfZ3MxN8jsKjH0dPFbsKxg-UwSr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925908817676-1m3dllllbvghj9fhh7dec0bstqjfr0dj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
