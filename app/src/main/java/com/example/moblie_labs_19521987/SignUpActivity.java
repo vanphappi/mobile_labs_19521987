@@ -44,7 +44,7 @@ public class SignUpActivity extends AppCompatActivity {
 
     TextView backtologin;
     private FirebaseAuth mAuth;
-     private FirebaseFirestore firestore;
+    private FirebaseFirestore firestore;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
