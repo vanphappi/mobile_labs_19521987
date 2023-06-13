@@ -1,4 +1,4 @@
-package com.example.moblie_labs_19521987;
+package com.example.mobile_labs_19521987;
 
 import org.junit.Test;
 
